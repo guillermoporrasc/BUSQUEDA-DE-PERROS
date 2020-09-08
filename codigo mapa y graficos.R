@@ -180,8 +180,8 @@ ggplot(data=PERROS_DEAMBULANTES,aes(ZONA,PERROS, fill=METODO)) +
 #PLOT DE PERROS ENCONTRADOS
 
 ggplot(data=PERROS_DEAMBULANTES,aes(x=ZONA, y=KILOMETROS,color=METODO,size=PERROS))+
-  geom_point(alpha=0.5)+coord_flip()+labs(title = "PERROS")
+  geom_point(alpha=0.8)+coord_flip()+labs(title = "PERROS")
 
 #PLOT DE PERROS EN RELACION AL AREA DE LA ZONA
 ggplot(data=PERROS_DEAMBULANTES,aes(x=AREA, y=PERROS,color=METODO,size=KILOMETROS))+
-  geom_point(alpha=0.5)+coord_flip()+labs(title = "PERROS")
+  geom_point(alpha=0.7)+coord_flip()+labs(title = "PERROS")
